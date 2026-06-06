@@ -2,79 +2,113 @@ AI Interview Preparation Agent
 
 Overview
 
-AI Interview Preparation Agent is an intelligent interview coaching platform that helps candidates prepare for technical and HR interviews using Large Language Models (LLMs).
+AI Interview Preparation Agent is an intelligent interview coaching platform that leverages Large Language Models (LLMs) to conduct personalized mock interviews.
 
-The system analyzes a candidate's resume, identifies skills and projects, generates personalized interview questions, evaluates answers, provides detailed feedback, and generates a final performance report.
+The system analyzes a candidate's resume, identifies technical skills and projects, generates customized interview questions, evaluates responses, provides improvement suggestions, and generates a detailed performance report.
 
-The platform also adapts questions based on the selected job role and company type (Product-Based or Service-Based).
+The platform supports multiple job roles and company types, allowing candidates to prepare for both product-based and service-based company interviews.
 
 ---
 
 Key Features
 
-• Resume Parsing (PDF and DOCX)
+• Resume Parsing (PDF Support)
 
-• AI-Powered Candidate Profiling
+• Resume-Based Interview Generation
 
-• Personalized Interview Question Generation
+• Role-Specific Interview Questions
 
-• Company-Specific Interview Preparation
+• Company-Specific Question Customization
 
-• Role-Based Technical Questions
+• Technical and HR Interview Preparation
 
-• Project-Based Interview Questions
+• AI-Powered Answer Evaluation
 
-• HR Interview Questions
-
-• Automated Answer Evaluation
+• Automated Feedback Generation
 
 • Performance Analytics Dashboard
 
-• Final Interview Feedback Report
+• Final Interview Assessment Report
 
-• Interactive Gradio Web Interface
+• Interactive Gradio User Interface
 
 ---
 
 Problem Statement
 
-Many students and job seekers struggle to prepare effectively for interviews because they lack personalized feedback and realistic mock interview experiences.
+Candidates often struggle to prepare for interviews because they lack personalized practice and detailed feedback.
 
-This project addresses that problem by creating an AI-powered interview coach that:
+This project addresses this challenge by providing an AI-powered mock interview platform that:
 
 • Understands candidate profiles
 
-• Generates relevant interview questions
+• Generates personalized interview questions
 
 • Evaluates answers
 
 • Identifies strengths and weaknesses
 
-• Recommends improvement areas
+• Recommends areas for improvement
 
 ---
 
 System Workflow
 
-1. Upload Resume (PDF/DOCX)
-
-2. Extract Resume Information
-
-3. Generate Candidate Profile
-
-4. Select Role and Company
-
-5. Generate Personalized Interview Questions
-
-6. Answer Questions
-
+1. Upload Resume
+2. Select Job Role
+3. Select Company
+4. Generate Candidate Profile
+5. Generate Interview Questions
+6. Submit Answers
 7. AI-Based Evaluation
+8. Performance Analysis
+9. Final Feedback Report
 
-8. Score Calculation
+---
 
-9. Final Feedback Generation
+Supported Roles
 
-10. Performance Visualization
+• Software Engineer
+• SDE
+• Data Analyst
+• Data Scientist
+• Machine Learning Engineer
+• Frontend Developer
+• Backend Developer
+• Web Developer
+• Java Developer
+• Python Developer
+• DevOps Engineer
+• QA Engineer
+• Business Analyst
+
+---
+
+Supported Companies
+
+Product-Based Companies
+
+• Google
+• Microsoft
+• Meta
+• Netflix
+• Salesforce
+• Uber
+• Oracle
+• SAP
+• Razorpay
+• Paytm
+
+Service-Based Companies
+
+• TCS
+• Infosys
+• Wipro
+• Accenture
+• Cognizant
+• Capgemini
+• HCL
+• LTIMindtree
 
 ---
 
@@ -88,17 +122,16 @@ Backend
 
 • Python
 
-Artificial Intelligence
+AI & NLP
 
 • Groq API
-• Llama 3.1 8B Instant
+• Llama 3.1
 
 Data Processing
 
 • Pandas
-• JSON
 
-Document Processing
+Document Parsing
 
 • PyPDF
 • Python-Docx
@@ -109,62 +142,35 @@ Visualization
 
 ---
 
-Supported Roles
+Application Screenshots
 
-• Software Engineer
+### Home Page
 
-• Data Analyst
+![Home Page](images/home_page.png)
 
-• Data Scientist
+### Resume Analysis and Question Generation
 
-• Machine Learning Engineer
+![Resume Analysis](images/resume_analysis_and_question.png)
 
-• Frontend Developer
+### Role Selection
 
-• Backend Developer
+![Role Selection](images/role_selection.png)
 
-• Web Developer
+### Company Selection
 
-• Java Developer
+![Company Selection](images/company_selection.png)
 
-• Python Developer
+### Answer Evaluation
 
-• DevOps Engineer
+![Answer Evaluation](images/answer_evaluation.png)
 
-• QA Engineer
+### Final Feedback Report
 
-• Business Analyst
+![Final Feedback](images/final_feedback_report.png)
 
----
+### Analytics Dashboard
 
-Supported Company Types
-
-Product-Based Companies
-
-• Google
-• Microsoft
-• Amazon
-• Salesforce
-• Adobe
-• Atlassian
-• Uber
-• Airbnb
-• Oracle
-• SAP
-
-Service-Based Companies
-
-• TCS
-• Infosys
-• Wipro
-• Accenture
-• Cognizant
-• Capgemini
-• HCL
-• LTIMindtree
-• KPIT
-
-The question difficulty and interview focus automatically adjust according to the selected company.
+![Analytics Dashboard](images/analytics_dashboard.png)
 
 ---
 
@@ -172,93 +178,41 @@ AI Capabilities
 
 Resume Analysis
 
-The system extracts:
-
-• Skills
-
-• Projects
-
-• Education
-
-• Experience
-
-• Strength Areas
+• Extracts Skills
+• Extracts Projects
+• Generates Candidate Summary
 
 Question Generation
 
-Generates:
-
 • Technical Questions
-
 • Project-Based Questions
-
 • HR Questions
 
 Answer Evaluation
 
-Evaluates answers based on:
-
-• Relevance
-
-• Correctness
-
-• Clarity
-
-• Technical Depth
-
+• Technical Accuracy
 • Communication Quality
+• Completeness
+• Problem Solving Approach
 
 Final Feedback
 
-Provides:
-
 • Overall Score
-
 • Strengths
-
 • Weak Areas
-
 • Improvement Suggestions
 
-• Interview Summary
-
 ---
 
-Performance Dashboard
+Future Improvements
 
-The application includes interactive visualizations:
-
-• Round-Wise Performance Chart
-
-• Feedback Distribution Chart
-
-• Final Interview Analytics
-
----
-
-Project Structure
-
-AI-Interview-Preparation-Agent/
-
-├── Interview_Preparation_Agent.ipynb
-
-├── interview_preparation_agent.py
-
-├── README.md
-
-├── requirements.txt
-
-└── images/
-
-```
-├── home_page.png
-
-├── interview_screen.png
-
-├── feedback_report.png
-
-└── analytics_dashboard.png
-```
+• Voice-Based Interviews
+• Speech-to-Text Support
+• Video Interview Simulation
+• ATS Resume Analysis
+• Coding Round Evaluation
+• Progress Tracking Dashboard
+• Multi-Language Support
 
 ---
 
@@ -278,53 +232,14 @@ python interview_preparation_agent.py
 
 ---
 
-Required Libraries
+Requirements
 
 gradio
-
 groq
-
 pandas
-
 plotly
-
 pypdf
-
 python-docx
-
----
-
-Future Improvements
-
-• Speech-to-Text Interview Mode
-
-• Voice-Based Mock Interviews
-
-• Video Interview Simulation
-
-• ATS Resume Analysis
-
-• Coding Round Evaluation
-
-• Interview Progress Tracking
-
-• Multi-Language Support
-
----
-
-Applications
-
-• Placement Preparation
-
-• Internship Preparation
-
-• Technical Interview Practice
-
-• Resume-Based Mock Interviews
-
-• Company-Specific Preparation
-
-• Career Guidance
 
 ---
 
