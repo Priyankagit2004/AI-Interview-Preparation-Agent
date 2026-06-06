@@ -216,22 +216,6 @@ Future Improvements
 
 ---
 
-Installation
-
-Clone the repository
-
-git clone https://github.com/your-username/AI-Interview-Preparation-Agent.git
-
-Install dependencies
-
-pip install -r requirements.txt
-
-Run the application
-
-python interview_preparation_agent.py
-
----
-
 Requirements
 
 gradio
